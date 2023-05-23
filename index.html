@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- boostrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- boostrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+      <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+   <!-- nav -->
+   <nav class="navbar navbar-expand-lg m-0 pt-0 bg-dark sticky sticky-tops" style="height:70px;line-height:70px;"> 
+    <div class="container p-0">
+      <a class="navbar-brand w-25" href="#">HRA Transport</a>
+      <button  class="navbar-toggler border-0 shadow-none " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-white fs-1" >
+          <i class="bi bi-list text-white"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 hhhh position-relative">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="about.html">ABOUT US</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> 
+              SERVICES
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">  <img src="images/de.png"   class="img-resize" alt="" class="mx-2"> Denmark</a></li>
+              <li><a class="dropdown-item" href="#">   <img src="images/france.png"  class="img-resize"alt="" class="mx-2">France </a></li> 
+              <li><a class="dropdown-item" href="#">   <img src="images/Germany.png"  class="img-resize"class="mx-2">Germany</a></li>
+              <li><a class="dropdown-item" href="#">   <img src="images/Greece.png" class="img-resize" class="mx-2">Greece</a></li>
+              <li><a class="dropdown-item" href="#">   <img src="images/Hungary.jpeg"  class="img-resize"class="mx-2">Hungary</a></li>
+              <li><a class="dropdown-item" href="#">   <img src="images/Italy.png" class="img-resize" class="mx-2">Italy</a></li>
+              <li><a class="dropdown-item" href="#">   <img src="images/Romania.png" class="img-resize" class="mx-2">Romania</a></li>
+              <li><a class="dropdown-item" href="#">   <img src="images/Slovenia.png" class="img-resize" class="mx-2">Slovenia</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link text-white"  href="index.html">WORKS
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white"  href="index.html">CONTACT
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <img src="images/en.png" alt=""> English
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">  <img src="images/de.png"   class="img-resize" alt="" class="mx-2"> Denmark</a></li>
+              <li><a class="dropdown-item" href="#">   <img src="images/france.png"  class="img-resize"alt="" class="mx-2">France </a></li> 
+              <li><a class="dropdown-item" href="#">   <img src="images/Germany.png"  class="img-resize"class="mx-2">Germany</a></li>
+              <li><a class="dropdown-item" href="#">   <img src="images/Greece.png" class="img-resize" class="mx-2">Greece</a></li>
+              <li><a class="dropdown-item" href="#">   <img src="images/Hungary.jpeg"  class="img-resize"class="mx-2">Hungary</a></li>
+              <li><a class="dropdown-item" href="#">   <img src="images/Italy.png" class="img-resize" class="mx-2">Italy</a></li>
+              <li><a class="dropdown-item" href="#">   <img src="images/Romania.png" class="img-resize" class="mx-2">Romania</a></li>
+              <li><a class="dropdown-item" href="#">   <img src="images/Slovenia.png" class="img-resize" class="mx-2">Slovenia</a></li>
+              </ul>
+            </li>
+        </ul>
+         
+      </div>
+    </div>
+  </nav>
+    <div class="container-fluid p-0" >
+       <div class="slider">
+           <!-- Swiper -->
+           <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/slide-01.jpg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/slide-02.jpg" alt="" class="w-100">
+              </div>
+              <div class="swiper-slide">
+                <img src="images/slide-03.jpg" alt="" class="w-100">
+              </div>  
+            </div>
+            <div class="swiper-pagination" style="color: brown;">
+
+            </div>
+          </div>
+       </div>
+    </div>
+    <!-- Logistics -->
+    <div class="container-fluid bg-dark p-0 m-0" id="Logistics">
+      <div class="container py-5">
+        <div class="head d-flex align-items-center">
+          <h2 class="Logistics-head"></h2><span class="Logistics-span">Services</span>
+        </div>
+        <div class="rows" style="margin-top:-20px">
+            <div class="custom-col">
+                <div class="images py-4 text-center">
+                  <img src="images/icon-karayolu-tasimaciligi.png" alt="" class="w-75">
+                  <h4 class="custom-title">Future Concept.</h4>
+                </div>
+            </div>
+            <div class="custom-col">
+              <div class="images py-4 text-center">
+                <img src="images/icon-depo-yonetimi.png" alt="" class="w-75">
+                <h4 class="custom-title">The Big Ideas.</h4>
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="images py-4 text-center">
+                <img src="images/icon-liman-1.png" alt="" class="w-75">
+                <h4 class="custom-title">Creative Solutions.</h4>
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="images py-4 text-center">
+                <img src="images/y-icon-hava-deniz.png" alt="" class="w-75">
+                <h4 class="custom-title">Door-to-door</h4>
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="images py-4 text-center">
+                <img src="images/icon-uluslararasi-ticaret.png" alt="" class="w-75">
+                <h4 class="custom-title">Removals</h4>
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="images py-4 text-center">
+                <img src="images/proje-icon.png" alt="" class="w-75">
+                <h4 class="custom-title">Vehicle Transport</h4>
+              </div>
+            </div> 
+            
+           
+            
+            <div class="custom-col">
+              <div class="images py-4 text-center">
+                <img src="images/fuar-icon.png" class="w-75">
+                <h4 class="custom-title">Personal</h4>
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="images py-4 text-center">
+                <img src="images/icon-gumruk.png" class="w-75">
+                <h4 class="custom-title">Commerical </h4>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="container mt-3">
+        <div class="head d-flex align-items-center">
+          <h2 class="Logistics-head" style="background:#00AEEF"></h2><span class="Logistics-span">Industriess</span>
+        </div>
+        <div class="rows" style="margin-top:-15px">
+            <div class="custom-col">
+                <div class="images py-4 text-center">
+                  <img src="images/icon-otomotiv.png" alt="" class="w-75">
+                  <h4 class="custom-title">Automotive</h4>
+                </div>
+            </div> 
+            <div class="custom-col">
+              <div class="images py-4 text-center">
+                <img src="images/icon-endustri.png" alt="" class="w-75">
+                <h4 class="custom-title">Manufacturing</h4>
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="images py-4 text-center">
+                <img src="images/icon-perakende-tekstil.png" alt="" class="w-75">
+                <h4 class="custom-title">Retail / Textile</h4>
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="images py-4 text-center">
+                <img src="images/icon-fmcg.png" alt="" class="w-75">
+                <h4 class="custom-title">FMCG</h4>
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="images py-4 text-center">
+                <img src="images/icon-saglik.png" alt="" class="w-75">
+                <h4 class="custom-title">Healthcare</h4>
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="images py-4 text-center">
+                <img src="images/icon-elektronik.png" alt="" class="w-75">
+                <h4 class="custom-title">Electronics</h4>
+              </div>
+            </div> 
+            
+           
+            
+            <div class="custom-col">
+              <div class="images py-4 text-center">
+                <img src="images/icon-e-ticaret.png" class="w-75">
+                <h4 class="custom-title">E-Commerce</h4>
+              </div>
+            </div>
+            <div class="custom-col">
+              <div class="images py-4 text-center">
+                <img src="images/kimya-icon.png" class="w-75">
+                <h4 class="custom-title">Chemistry</h4>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div> 
+ 
+    <!-- earth area -->
+    <div class="container-fluid bg-dark py-5" style="margin-top:-26px">
+        <div class="container">
+          <div class="row mt-4">
+              <div class="col-12 position-relative" >
+                <img src="images/ekol-world-map-en-12_rev.png" alt="" class="w-100">
+                <h2 class="uk">UK</h2>
+              </div>
+          </div>
+          <div class="row my-5 align-items-center margin-top" >
+            <div class="col-lg-3 col-md-6 mb-3">
+              <div class="rdcol text-center" >
+                <div class="d-flex align-items-center text-centers">
+                  <h1 class="five">5</h1>
+                  <h5 class="projects">MIL €/year <br>investment</h5>
+                </div>
+                <div class="ig mt-3">
+                  <img src="images/icon-investment-euro.png" alt="">
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-3  col-md-6 mb-3">
+                <div class=" rdcol text-center" >
+                  <h2 class="rdcol-heading">150 +</h2>
+                  <h5 class="projects">projects</h5>
+                  <div class="ig">
+                    <img src="images/icon-projects.png" alt="">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-lg-3  col-md-6 mb-3">
+                <div class=" rdcol text-center" >
+                  <h2 class="rdcol-heading">200</h2>
+                  <h5 class="projects">employees</h5>
+                  <div class="ig">
+                    <img src="images/icon-colleagues.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3  col-md-6 mb-3">
+                  <div class="img-box">
+                    <img src="images/arge-anasayfa-not-en.png" alt="" class="w-100 h-100">
+                  </div>
+              </div>
+          </div>
+          <div class="row align-items-center  margin-top">
+            <div class="head mb-3">
+              <div class="d-flex align-items-center">
+                <h2 class="Logistics-head"></h2><span class="Logistics-span">Services</span>
+              </div>
+              <h5 class="With-green" style="margin-top:-15px; margin-bottom: 10px;">With Green Logistics every month we save:</h5>
+            </div>
+            <div class="col-lg-5 col-md-12 col-12 mb-3">
+            
+                <img src="images/ekol-yesil-lojistik-gorsel_en_2023.png" alt="" class="w-100" style="height: 268px;">
+            </div>
+            <div class="col-lg-7 col-md-12 col-12 mb-3 p-0 m-0 mt-5">
+              <div class="shadow-box w-90 ">
+                <h3 class="Savings">2022 Savings</h3>
+                <div class="group">
+                  <h2> CO2 <span  class="counter">41727395</span>  kg</h2>
+                <h2> Diesel <span class="counter">31799869</span>  liters</h2>
+                </div>
+              </div>
+          </div>
+          </div>
+
+          <!-- testimonial --> 
+          
+         <div class="row mt-5">
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                <div class="box py-5 px-4" >
+                    <div class="box-heading"> 
+                        <h3 class="box-caption">Future Concept.</h3>
+                    </div>
+                    <div class="box-body">
+                        <p class="box-pra">
+                            At HRA Transport, we are constantly looking towards the future to find innovative and sustainable ways to serve our clients. Our future concept includes leveraging technology and automation to streamline our operations and provide even more efficient and reliable service.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                <div class="box py-5 px-4">
+                    <div class="box-heading"> 
+                        <h3 class="box-caption">The Big Ideas.</h3>
+                    </div>
+                    <div class="box-body">
+                        <p class="box-pra">
+                            We are always thinking big and looking for ways to innovate in the cargo industry. Our big ideas include embracing emerging technologies, such as blockchain and artificial intelligence, to transform the way we manage cargo and provide even greater value to our clients.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
+                <div class="box py-5 px-4">
+                    <div class="box-heading"> 
+                        <h3 class="box-caption">Creative Solutions.</h3>
+                    </div>
+                    <div class="box-body">
+                        <p class="box-pra">
+                            At HRA Transport, we believe that international shipping doesn’t have to be a one-size-fits-all solution. That’s why we’re constantly working to develop innovative and creative solutions that meet the unique needs of our customers. From advanced technology to custom packaging options, our creative solutions are revolutionizing the industry and making international shipping faster, safer, and more efficient than ever before.
+                        </p>
+                    </div>
+                </div>
+            </div>
+          </div> 
+
+
+
+
+
+
+
+
+
+
+          <div class="row mb-5  margin-top">
+            <div class="head mt-4">
+              <div class="d-flex align-items-center">
+                <h2 class="Logistics-head" style="background-color: #66fcf1;"></h2><span class="Logistics-span">Testimonials.</span>
+              </div> 
+            </div>
+             
+          <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-5" uk-scrollspy="cls: uk-animation-slide-bottom;">
+                  <div class="who-box text-center">
+                     
+                      <div class="who-pra " style="margin:30px auto !important">
+                          <p style="font-size: 15px !important;">
+                              “Son gönderimimde HRA Transport ile çalıştım ve hizmetlerinden son derece memnun kaldım. Tüm süreç sorunsuz ve zahmetsizdi, paketim zamanında ve güvenli bir şekilde ulaştı. Ekipleri duyarlı ve profesyoneldi, rekabetçi fiyatlandırmalarını da takdir ettim. HRA Transport, Türkiye’ye güvenilir kargo hizmeti arayan herkese kesinlikle tavsiye ederim.”
+                          </p>
+                      </div>
+                      <div class="profile">
+                          <div class="profile-images">
+                              <img src="images/profile1.webp" alt="">
+                          </div>
+                          <h4>John Doe</h4>
+                      </div>
+                  </div>
+                  
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-5" uk-scrollspy="cls: uk-animation-slide-bottom;">
+                  <div class="who-box text-center">
+                      
+                      <div class="who-pra " style="margin:30px auto !important">
+                          <p style="font-size: 15px !important;" class="custom-style">
+                              “HRA transport dan Çok memnun kaldım! Kargom zamanında ve güvenli bir şekilde teslim edildi. Kargo şirketinin personeli çok yardımcı ve profesyonel davrandılar. Herkese bu kargo şirketini tavsiye ederim!”
+                          </p>
+                      </div>
+                      <div class="profile">
+                          <div class="profile-images">
+                              <img src="images/profile3.webp" alt="">
+                          </div>
+                          <h4>Mert Öztürk</h4>
+                      </div>
+                  </div>
+                  
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-5" uk-scrollspy="cls: uk-animation-slide-bottom;">
+                  <div class="who-box text-center">
+                      
+                      <div class="who-pra " style="margin:30px auto !important">
+                          <p style="font-size: 15px !important;" class="custom-style">
+                              “Unser Unternehmen war mit dem erstmaligen Einsatz der Firma HRA Transporte sehr zufrieden.  Wir werden Sie auf jeden fall für unsere zukünftigen Transporte wiederverwenden.
+                          </p>
+                      </div>
+                      <div class="profile">
+                          <div class="profile-images">
+                              <img src="images/My-project.jpg" alt="">
+                          </div>
+                          <h4>Hanna Schmidt</h4>
+                      </div>
+                  </div>
+                  
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12 mb-5" uk-scrollspy="cls: uk-animation-slide-bottom;">
+                  <div class="who-box text-center">
+                       
+                      <div class="who-pra " style="margin:30px auto !important">
+                          <p style="font-size: 15px !important;">
+                              “We recently worked together with HRA Transport to deliver some of our delicate valuable items across Europe from our warehouse in the UK, and I must say, I was thoroughly impressed. Their team of logistics professionals was extremely helpful, providing me with all the information I needed to make an informed decision about my shipment. They were also very accommodating to my specific needs and timelines.”
+                          </p>
+                      </div>
+                      <div class="profile">
+                          <div class="profile-images">
+                              <img src="images/profile2.webp" alt="">
+                          </div>
+                          <h4>Steven Doe</h4>
+                      </div>
+                  </div>
+                  
+              </div>
+          </div>
+          </div>
+        </div>
+    </div>
+
+
+
+  <div class="container-fluid" style="margin-top:-20px" >
+    <div class="row">
+      <div class="col-lg-6 col-md-12 bg-dark m-0 p-0">
+        <div class="map">
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9552651.115691893!2d-13.451349308191537!3d54.22982213182305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2z4Kav4KeB4KaV4KeN4Kak4Kaw4Ka-4Kac4KeN4Kav!5e0!3m2!1sbn!2sbd!4v1681055777284!5m2!1sbn!2sbd"  style="border:0; width: 100%;height:415px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div> 
+        <div class="col-lg-6 col-md-12 bg-dark" id="magin-top-1" > 
+          <div class="title"> 
+              <h2 class="h-fonts text-white fw-bold" style="margin-bottom: 16px;font-size:36px;line-height:40px">Contact Us</h2>
+          </div>
+          <form action="#">
+              <div class="row ">
+                  <div class="col-lg-6">
+                    <div class="mb-3 position-relative">
+                      <label for="exampleFormControlInput1" class="labelName form-label position-absolute text-white fs-5 text-capitalize fw-normal" style="top:22%; left:5%">Name</label>
+                      <input type="email" class="form-control custom-input bg-dark inputName text-white p-2" id="exampleFormControlInput1 p-2">
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="mb-3 position-relative">
+                      <label for="exampleFormControlInput1" class="labelEmail form-label text-white position-absolute fs-6 text-capitalize fw-normal" style="top:22%; left:5%">E-mail</label>
+                      <input type="email" class="form-control custom-input bg-dark inputEmail text-white" id="exampleFormControlInput1 p-2" >
+                    </div>
+                  </div>
+              </div>
+              <div class="row mt-1">
+                <div class="col-lg-6">
+                  <div class="mb-3 position-relative">
+                    <label for="exampleFormControlInput1" class="labelNumber form-label position-absolute text-white fs-6 text-capitalize fw-normal" style="top:22%; left:5%">Phone Number</label>
+                    <input type="email" class="form-control custom-input bg-dark inputNumber text-white p-3" id="exampleFormControlInput1">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="mb-3 position-relative">
+                    <label for="exampleFormControlInput1" class="labelWeb form-label text-white position-absolute fs-6 text-capitalize fw-normal" style="top:22%; left:5%">Your Web site</label>
+                    <input type="email" class="form-control custom-input bg-dark inputWeb text-white p-3" id="exampleFormControlInput1" >
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="mb-3 position-relative">
+                    <label for="exampleFormControlTextarea1" class="labelMessage form-label text-white position-absolute fs-6 text-capitalize fw-normal " style="top:22%; left:3%">You Message Here</label>
+                    <textarea class="form-control custom-input bg-dark inputMessage p-4" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                    <a href="#" class="btn-custom" >submit now</a>
+                </div>
+              </div>
+          </form>
+        </div> 
+    </div>
+  </div>
+
+ <!-- fo0tter -->
+
+<div class="container-fluid py-5" style="background:#000">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4 col-md-6 mb-5">
+              <div class="socal-link link">
+                
+                  <li><a href="#"><i class="bi bi-chevron-right"></i> <span>BAF</span></a></li>
+                  <li><a href="#"><i class="bi bi-chevron-right"></i><span>Information Society Services</span></a></li>
+                  <li><a href="#"><i class="bi bi-chevron-right"></i><span>Logistics Terms Glossary</span></a></li>
+                  <li><a href="#"><i class="bi bi-chevron-right"></i><span>Processing of Personal Data</span></a></li>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-5">
+            <div class="logo">
+               <h3 class="Follow">Headquarters</h3>
+            </div>
+            <div class="socal-link">
+              <li class="d-flex align-items-center">
+                <i class="bi bi-house-door text-white "></i>
+                  <div>
+                    <h6>HRA Transport No:2 <br>
+                      TR-34935 Sultanbeyli / İstanbul</h6>
+                  </div>
+              </li> 
+                <li class="d-flex align-items-center">
+                  <i class="bi bi-telephone-fill text-white fs-3"></i>
+                    <div>
+                        <h6>90 216 564 3000</h6>
+                    </div>
+                </li>
+               
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-5">
+              <div class="logo">
+                 <h3 class="Follow"> Follow Us</h3>
+              </div>
+              
+              <div class="link-3">
+                <li style="margin-left:0;"><a href="#"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+            </div>
+          </div>
+
+        
+      </div>
+  </div>
+</div>
+
+    <div class="whatsapp-btn-container">
+        <a href="https://wa.me/+447503358565" class="whatsapp-btn"><i class="bi bi-whatsapp"></i></a>
+        <span>Contact Us</span>
+    </div>
+<!-- boostrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>
+
+<script>
+    $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+});
+</script>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: {
+    delay: 5000,
+  },
+  });
+</script>
+ <script type="text/javascript">
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector('.sticky-tops');
+      header.classList.toggle('sticky',window.scrollY > 10 );
+    });
+
+    
+ </script>
+<script>
+  $('.inputName').focus(function(){
+					$('.labelName').hide();
+	});
+	
+  $('.inputEmail').focus(function(){
+					$('.labelEmail').hide();
+	});
+ 
+
+  $('.inputNumber').focus(function(){
+					$('.labelNumber').hide();
+	});
+
+  $('.inputWeb').focus(function(){
+					$('.labelWeb').hide();
+	});
+
+  $('.inputMessage').focus(function(){
+					$('.labelMessage').hide();
+	});
+</script>
+</body>
+</html>
+
+
+
+
+
